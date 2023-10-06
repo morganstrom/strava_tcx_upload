@@ -4,7 +4,7 @@ from models import Author, TrainingCenterDatabase, TrackPoint, INPUT_DATE_FORMAT
 
 def test_from_xml():
     # given
-    with open("resources/input.tcx", "r") as f:
+    with open("tests/resources/input.tcx", "r") as f:
         xml = f.read()
 
     # when
@@ -118,7 +118,7 @@ def test_to_xml():
 
 def test_collapse_activities():
     # given
-    with open("resources/input.tcx", "r") as f:
+    with open("tests/resources/input.tcx", "r") as f:
         xml = f.read()
 
     # when
